@@ -1,7 +1,7 @@
 job('simpleJobWithParametersTrigger'){
   
   steps {
-      shell ('echo SUCCESS') 
+      shell ('echo SUCCESS commit') 
   }  
 }
 
