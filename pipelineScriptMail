@@ -6,6 +6,6 @@ node {
         sh 'ls'
     }
     stage('Mail') {
-        sh 'echo Mail'
+        mail bcc: '', body: 'my first mail stage', cc: '', from: '', replyTo: '', subject: 'test stage', to: 'christian.bodnariu@oracle.com'
     }
 }
