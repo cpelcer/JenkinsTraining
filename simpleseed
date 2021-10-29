@@ -1,11 +1,11 @@
-job('simpleJobWithParameters'){
+job('simpleJobWithParametersTrigger'){
   
   steps {
       shell ('echo SUCCESS') 
   }  
 }
 
-job('generatedJob'){
+job('generatedJobTrigger'){
   parameters {
    stringParam('Object', 'Undescribed', 'This parameter describes a type of a object') 
   }
