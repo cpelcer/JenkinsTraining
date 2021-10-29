@@ -1,0 +1,8 @@
+node {
+    stage('Download') {
+        git branch: 'main', credentialsId: 'ddf531db-e2eb-4349-8210-5e4bc194e896', url: 'https://github.com/cpelcer/JenkinsTraining.git'
+    }
+    stage('Print') {
+        sh 'cat Cristian.txt'
+    }
+}
